@@ -5,7 +5,7 @@ This application is for demonstration purposes only. I've added notes throughout
 2. Navigate to `http://localhost:3000/` in your browser
 
 **To access the database to review/inspect tables, etc.**
-1. Navigate to `http://localhost:3000/` in your browser to access phpMyAdmin interface.
+1. Navigate to `http://localhost:3001/` in your browser to access phpMyAdmin interface.
 2. Credentials are listed in the `docker-compose.yml` file in the root directory.
 
 **To turn off/remove docker containers**
