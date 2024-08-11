@@ -40,7 +40,7 @@ class ApplicationController
             echo json_encode($application);
         }
     }
-
+    // NOTE/TODO: For these two routes below, it's crucial we sanitize the input to address possible vulnerabilities such as SQL injections.
     // POST api/application
     public function postApplication()
     {
@@ -113,7 +113,7 @@ class ApplicationController
             http_response_code(204);
             exit();
         }
-        
+
         $application->deadline_date = $requestBody->deadline_date;
         $application->organizer_id = $requestBody->organizer_id;
         $application->event_id = $requestBody->event_id;
